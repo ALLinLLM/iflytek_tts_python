@@ -157,18 +157,21 @@ if __name__ == "__main__":
     APPID = config['APPID']
     APIKey = config['APIKey']
     APISecret = config['APISecret']
+    text_path = config['text_path']
     text_limit = config['text_limit']
     speed = config['speed']
     voice_name = config['voice_name']
+    sentence_sep_iter = config['sentence_sep_iter']
 
     print('\n\nload config successfully\n\n')
     # 读取文本
-    with open("../text.txt", "r", encoding="UTF-8") as data:
+    with open("../"+text_path, "r", encoding="UTF-8") as data:
         lines = data.readlines()
     id = 0
     count = 0
     text2000 = []
     for line in lines:
+        line += "[p%d]"%sentence_sep_iter
         count += len(line)
         if count >= text_limit:
             # 调用科大tts web API

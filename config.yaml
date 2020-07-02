@@ -1,13 +1,21 @@
 # 登录科大讯飞控制台-语音合成
 # https://console.xfyun.cn/services/tts
 # 查看自己的应用密钥
-APPID: #xxxxxxx
-APIKey: #xxxxxxxxxxxxxxxxxxxxxxxxxxxx
-APISecret: #xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+APPID: # xxxxxxx
+APIKey: # xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+APISecret: # xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# 文本文件路径
+text_path: ./inputs/text_short.txt
 
 # 长度限制，默认2000，如果超过，就自动拼接
 text_limit: 2000
+
+# 语速
 speed: 80  # 0-100
 
 # 播音员
 voice_name: "x2_pengfei"  # "x2_chaoge"
+
+# 句子间换气间隔ms
+sentence_sep_iter: 1000
