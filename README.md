@@ -3,6 +3,9 @@
 
 本项目基于官方的语音合成[demo（python3）](http://xfyun-doc.ufile.ucloud.com.cn/1587968076405500/tts_ws_python3_demo.zip)
 
+github如果很慢，试一下鹅厂的coding.net代码托管
+https://caiwuziyou.coding.net/public/sophisticated_xf_tts_webapi/sophisticated_xf_tts_webapi/git/files
+
 提供了以下功能：
 - 长文本（>=2000字）自动拼接
 - 参数全部配置文件化，不用改一行代码，方便使用
